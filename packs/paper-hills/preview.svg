@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Preview: the scene stopped part-way through. -->
+  <style>*{animation-play-state:paused!important;animation-delay:-11s!important}</style>
+  <title>Paper Hills</title>
+  <defs>
+    <linearGradient id="ph-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3e4"/>
+      <stop offset=".7" stop-color="#f9dcc0"/>
+      <stop offset="1" stop-color="#f4c6a4"/>
+    </linearGradient>
+    <radialGradient id="ph-sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffb07a"/>
+      <stop offset=".7" stop-color="#ff8f6b"/>
+      <stop offset="1" stop-color="#ff8f6b" stop-opacity="0"/>
+    </radialGradient>
+    <!-- One band is 3840 wide and repeats every 1920, so sliding it by 1920 loops without a seam. -->
+    <path id="ph-band" d="M0 0c320-60 640-60 960 0s640 60 960 0 640-60 960 0 640 60 960 0V700H0z"/>
+  </defs>
+  <style>
+    .drift { animation: drift linear infinite; }
+    .cloud { animation: cloud linear infinite; }
+    .sun { animation: breathe 14s ease-in-out infinite alternate; transform-origin: 1340px 430px; }
+    @keyframes drift { to { transform: translateX(-1920px); } }
+    @keyframes cloud { from { transform: translateX(-400px); } to { transform: translateX(2300px); } }
+    @keyframes breathe { from { transform: scale(.96); } to { transform: scale(1.04); } }
+  </style>
+
+  <rect width="1920" height="1080" fill="url(#ph-sky)"/>
+  <circle class="sun" cx="1340" cy="430" r="170" fill="url(#ph-sun)"/>
+
+  <g fill="#fffaf2" opacity=".85">
+    <g class="cloud" style="animation-duration:120s;animation-delay:-30s"><rect x="0" y="180" width="220" height="34" rx="17"/><rect x="50" y="160" width="120" height="34" rx="17"/></g>
+    <g class="cloud" style="animation-duration:150s;animation-delay:-95s"><rect x="0" y="300" width="160" height="26" rx="13"/><rect x="40" y="284" width="80" height="26" rx="13"/></g>
+    <g class="cloud" style="animation-duration:180s;animation-delay:-140s"><rect x="0" y="120" width="260" height="30" rx="15"/></g>
+  </g>
+
+  <g>
+    <g transform="translate(0 560)"><use class="drift" href="#ph-band" fill="#f2b38f" style="animation-duration:160s"/></g>
+    <g transform="translate(0 660)"><use class="drift" href="#ph-band" fill="#e88b6c" style="animation-duration:120s;animation-delay:-37s"/></g>
+    <g transform="translate(0 760)"><use class="drift" href="#ph-band" fill="#c9675a" style="animation-duration:90s;animation-delay:-61s"/></g>
+    <g transform="translate(0 870)"><use class="drift" href="#ph-band" fill="#8f4a55" style="animation-duration:70s;animation-delay:-18s"/></g>
+    <g transform="translate(0 980)"><use class="drift" href="#ph-band" fill="#5e3448" style="animation-duration:55s;animation-delay:-40s"/></g>
+  </g>
+</svg>

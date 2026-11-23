@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "name": "Ambient Desk scenes",
+  "homepage": "https://github.com/mo3athothman/AmbientDesk-scenes",
+  "updated": "2026-11-23",
+  "packs": [
+    {
+      "id": "lantern-drift",
+      "title": "Lantern Drift",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "Paper lanterns rising slowly from a night lake, swaying as they go.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/lantern-drift/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/lantern-drift/preview.svg",
+      "sha256": "d35e3efe7fe815f427da957d9941d73b0cf496b539fdb4d26d8f7c2a386bf56d",
+      "size": 5257,
+      "tags": [
+        "dark",
+        "night",
+        "calm"
+      ]
+    },
+    {
+      "id": "paper-hills",
+      "title": "Paper Hills",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "Layers of cut-paper hills drifting past a soft morning sun.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/paper-hills/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/paper-hills/preview.svg",
+      "sha256": "c09c2e61649bb23eb964fe7f370834fd9285fae61977c4e6f691387dbf806699",
+      "size": 2683,
+      "tags": [
+        "light",
+        "landscape",
+        "warm"
+      ]
+    },
+    {
+      "id": "quiet-orbits",
+      "title": "Quiet Orbits",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "A small star system turning slowly, its planets on faint rings.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/quiet-orbits/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/quiet-orbits/preview.svg",
+      "sha256": "1d2cbb6f5569b7f3ab44a6eac72e621036cfb7b4c5366632676656d36598f1f8",
+      "size": 3369,
+      "tags": [
+        "dark",
+        "space",
+        "minimal"
+      ]
+    }
+  ]
+}
