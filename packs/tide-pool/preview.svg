@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Preview: the scene stopped part-way through. -->
+  <style>*{animation-play-state:paused!important;animation-delay:-11s!important}</style>
+  <title>Tide Pool</title>
+  <defs>
+    <radialGradient id="tp-water" cx=".45" cy=".45" r=".8">
+      <stop offset="0" stop-color="#bfeee6"/>
+      <stop offset=".55" stop-color="#7fd0c8"/>
+      <stop offset="1" stop-color="#3f9fa6"/>
+    </radialGradient>
+    <radialGradient id="tp-light" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <circle id="tp-ring" r="60" fill="none" stroke="#ffffff" stroke-width="3"/>
+  </defs>
+  <style>
+    /* Each ripple grows and fades; three per spot, a third of a cycle apart. */
+    .ripple { animation: ripple 7.5s ease-out infinite; opacity: 0; }
+    .shimmer { animation: shimmer ease-in-out infinite alternate; }
+    .sway { animation: sway ease-in-out infinite alternate; }
+    @keyframes ripple { 0% { transform: scale(.2); opacity: .7; } 100% { transform: scale(4.5); opacity: 0; } }
+    @keyframes shimmer { from { transform: translate(-30px, -10px); opacity: .5; } to { transform: translate(30px, 10px); opacity: .9; } }
+    @keyframes sway { from { transform: rotate(-6deg); } to { transform: rotate(6deg); } }
+  </style>
+
+  <rect width="1920" height="1080" fill="url(#tp-water)"/>
+
+  <!-- pebbles on the bottom -->
+  <g opacity=".55">
+    <ellipse cx="240" cy="820" rx="70" ry="44" fill="#e9d9b8"/><ellipse cx="330" cy="870" rx="40" ry="26" fill="#d8c29c"/>
+    <ellipse cx="1650" cy="230" rx="90" ry="56" fill="#e9d9b8"/><ellipse cx="1560" cy="300" rx="44" ry="30" fill="#cdb894"/>
+    <ellipse cx="1500" cy="880" rx="60" ry="38" fill="#e2cfab"/><ellipse cx="480" cy="190" rx="50" ry="32" fill="#d8c29c"/>
+    <ellipse cx="960" cy="1000" rx="80" ry="40" fill="#e9d9b8"/>
+  </g>
+  <!-- starfish and a shell -->
+  <path d="M300 520l14 32 34 4-26 22 8 34-30-18-30 18 8-34-26-22 34-4z" fill="#f08a6b" opacity=".85"/>
+  <path d="M1400 640c30-40 90-40 120 0-20 30-100 30-120 0z" fill="#f6dcc6" opacity=".9"/>
+
+  <!-- weed swaying from the rocks -->
+  <g fill="#3f8f6e" opacity=".75">
+    <path class="sway" style="transform-origin:1680px 300px;animation-duration:5s" d="M1680 300c-30-80-10-160 30-220-20 70-24 150-10 220z"/>
+    <path class="sway" style="transform-origin:250px 830px;animation-duration:6s;animation-delay:-2s" d="M250 830c-40-70-30-150 10-210-14 70-12 140 10 210z"/>
+    <path class="sway" style="transform-origin:300px 860px;animation-duration:5.4s;animation-delay:-1s" d="M300 860c20-60 50-110 90-140-30 46-50 96-70 150z"/>
+  </g>
+
+  <!-- light dancing on the surface -->
+  <g fill="url(#tp-light)">
+    <ellipse class="shimmer" cx="600" cy="380" rx="260" ry="90" style="animation-duration:6s"/>
+    <ellipse class="shimmer" cx="1300" cy="520" rx="300" ry="100" style="animation-duration:7.5s;animation-delay:-3s"/>
+    <ellipse class="shimmer" cx="900" cy="820" rx="240" ry="80" style="animation-duration:6.8s;animation-delay:-1.5s"/>
+  </g>
+
+  <!-- ripples: drips from above in three places -->
+  <g transform="translate(720 470)">
+    <use href="#tp-ring" class="ripple"/><use href="#tp-ring" class="ripple" style="animation-delay:-2.5s"/><use href="#tp-ring" class="ripple" style="animation-delay:-5s"/>
+  </g>
+  <g transform="translate(1340 330)">
+    <use href="#tp-ring" class="ripple" style="animation-duration:9s;animation-delay:-1s"/><use href="#tp-ring" class="ripple" style="animation-duration:9s;animation-delay:-4s"/><use href="#tp-ring" class="ripple" style="animation-duration:9s;animation-delay:-7s"/>
+  </g>
+  <g transform="translate(1100 820)">
+    <use href="#tp-ring" class="ripple" style="animation-duration:8.2s;animation-delay:-2s"/><use href="#tp-ring" class="ripple" style="animation-duration:8.2s;animation-delay:-4.7s"/><use href="#tp-ring" class="ripple" style="animation-duration:8.2s;animation-delay:-7.4s"/>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Preview: the scene stopped part-way through. -->
+  <style>*{animation-play-state:paused!important;animation-delay:-11s!important}</style>
+  <title>Neon Horizon</title>
+  <defs>
+    <linearGradient id="nh-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0420"/>
+      <stop offset=".6" stop-color="#2a0b45"/>
+      <stop offset="1" stop-color="#5a1453"/>
+    </linearGradient>
+    <linearGradient id="nh-sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe26b"/>
+      <stop offset=".55" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#ff2e88"/>
+    </linearGradient>
+    <linearGradient id="nh-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0630"/>
+      <stop offset="1" stop-color="#070210"/>
+    </linearGradient>
+    <radialGradient id="nh-glow" cx=".5" cy="1" r=".6">
+      <stop offset="0" stop-color="#ff4fa3" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ff4fa3" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="nh-sun-cut">
+      <!-- Stripes cut out of the lower half of the sun. -->
+      <path d="M660 160h600v330h-600zM660 500h600v14h-600zM660 526h600v12h-600zM660 550h600v10h-600zM660 572h600v8h-600zM660 592h600v6h-600z"/>
+    </clipPath>
+    <clipPath id="nh-floor-clip"><rect y="600" width="1920" height="480"/></clipPath>
+  </defs>
+  <style>
+    /* Lines sit at 600 + 12·1.35^k; scaling by 1.35 about the horizon moves each onto the next, so it loops. */
+    .rush { animation: rush 1.6s linear infinite; transform-origin: 960px 600px; }
+    .pulse { animation: pulse 6s ease-in-out infinite alternate; }
+    .drift { animation: drift 60s linear infinite; }
+    @keyframes rush { from { transform: scaleY(1); } to { transform: scaleY(1.35); } }
+    @keyframes pulse { from { opacity: .55; } to { opacity: 1; } }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-960px); } }
+  </style>
+
+  <rect width="1920" height="600" fill="url(#nh-sky)"/>
+  <g fill="#fff" opacity=".7">
+    <circle cx="140" cy="90" r="1.5"/><circle cx="420" cy="200" r="1.2"/><circle cx="610" cy="60" r="1.8"/>
+    <circle cx="1350" cy="120" r="1.4"/><circle cx="1580" cy="40" r="1.6"/><circle cx="1790" cy="230" r="1.2"/>
+    <circle cx="300" cy="330" r="1"/><circle cx="1500" cy="330" r="1.1"/><circle cx="880" cy="70" r="1.3"/>
+  </g>
+  <circle class="pulse" cx="960" cy="600" r="420" fill="url(#nh-glow)"/>
+  <circle cx="960" cy="420" r="230" fill="url(#nh-sun)" clip-path="url(#nh-sun-cut)"/>
+
+  <!-- distant mountains, a slow parallax band twice as wide as the screen -->
+  <g class="drift">
+    <path d="M0 600l120-70 90 40 140-110 120 90 110-50 150 100 100-60 130 60 V600zM960 600l120-70 90 40 140-110 120 90 110-50 150 100 100-60 130 60V600z" fill="#170528"/>
+    <path d="M0 600l120-70 90 40 140-110 120 90 110-50 150 100 100-60 130 60M960 600l120-70 90 40 140-110 120 90 110-50 150 100 100-60 130 60" fill="none" stroke="#c64cff" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M1920 600l120-70 90 40 140-110 120 90 110-50 150 100 100-60 130 60" fill="none" stroke="#c64cff" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M1920 600l120-70 90 40 140-110 120 90 110-50 150 100 100-60 130 60V600z" fill="#170528"/>
+  </g>
+
+  <rect y="600" width="1920" height="480" fill="url(#nh-floor)"/>
+  <g clip-path="url(#nh-floor-clip)" stroke="#ff4fd8" stroke-width="2" fill="none">
+    <g class="rush">
+      <path d="M0 601.09h1920M0 601.47h1920M0 601.98h1920M0 602.68h1920M0 603.61h1920M0 604.88h1920M0 606.58h1920M0 608.89h1920M0 612h1920M0 616.2h1920M0 621.87h1920M0 629.52h1920M0 639.86h1920M0 653.81h1920M0 672.64h1920M0 698.07h1920M0 732.39h1920M0 778.72h1920M0 841.28h1920M0 925.73h1920M0 1039.73h1920"/>
+    </g>
+    <g stroke-opacity=".8">
+      <path d="M960 600L960 1080M960 600L700 1080M960 600L1220 1080M960 600L440 1080M960 600L1480 1080M960 600L180 1080M960 600L1740 1080M960 600L-80 1080M960 600L2000 1080M960 600L-340 1080M960 600L2260 1080M960 600L-600 1080M960 600L2520 1080"/>
+    </g>
+  </g>
+  <rect y="598" width="1920" height="4" fill="#ff8ae6" opacity=".8"/>
+</svg>

@@ -2,7 +2,7 @@
   "format": 1,
   "name": "Ambient Desk scenes",
   "homepage": "https://github.com/mo3athothman/AmbientDesk-scenes",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "packs": [
     {
       "id": "lantern-drift",
@@ -53,6 +53,110 @@
         "dark",
         "space",
         "minimal"
+      ]
+    },
+    {
+      "id": "neon-horizon",
+      "title": "Neon Horizon",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "A synthwave sunset: a striped sun, glowing ridges and a neon grid rushing toward you.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/neon-horizon/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/neon-horizon/preview.svg",
+      "sha256": "a150133470fff17946344e8e2cb8f0c37a87b74c27cae5720a6c10a481e65873",
+      "size": 4093,
+      "tags": [
+        "dark",
+        "retro",
+        "neon"
+      ]
+    },
+    {
+      "id": "rain-on-glass",
+      "title": "Rain on Glass",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "A rainy night seen through a window: city lights out of focus, drops running down the glass.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/rain-on-glass/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/rain-on-glass/preview.svg",
+      "sha256": "b6f7b89b588b47f167109be30f5eb4f4628d62ca15769a03c384a3980cf0c4a5",
+      "size": 7598,
+      "tags": [
+        "dark",
+        "rain",
+        "city",
+        "calm"
+      ]
+    },
+    {
+      "id": "meadow-breeze",
+      "title": "Meadow Breeze",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "Grass swaying on rolling hills while dandelion seeds drift past on the wind.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/meadow-breeze/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/meadow-breeze/preview.svg",
+      "sha256": "3c1177473a363a1d19a221e276dc92cca1c738d25476f172288b72b40ad07cf3",
+      "size": 7072,
+      "tags": [
+        "light",
+        "nature",
+        "calm"
+      ]
+    },
+    {
+      "id": "desert-stars",
+      "title": "Desert Stars",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "The night sky turning slowly over the dunes, a shooting star now and then, a small campfire.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/desert-stars/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/desert-stars/preview.svg",
+      "sha256": "ecda2c63f487fd2d64e739e3f06ad4ea5ca6adecf90f8318119ecf27b297b35e",
+      "size": 4562,
+      "tags": [
+        "dark",
+        "night",
+        "space",
+        "landscape"
+      ]
+    },
+    {
+      "id": "tide-pool",
+      "title": "Tide Pool",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "A shallow pool from above: ripples spreading, light dancing over pebbles and a starfish.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/tide-pool/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/tide-pool/preview.svg",
+      "sha256": "6b6320757355e9d0e889076606c679babcfdbc0620020dade7a347eca13ef57d",
+      "size": 3949,
+      "tags": [
+        "light",
+        "water",
+        "calm"
+      ]
+    },
+    {
+      "id": "petal-bloom",
+      "title": "Petal Bloom",
+      "author": "Ambient Desk",
+      "licence": "CC0-1.0",
+      "description": "Pastel petals in three rings, turning slowly in opposite directions and breathing.",
+      "type": "svg",
+      "file": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/petal-bloom/scene.svg",
+      "preview": "https://raw.githubusercontent.com/mo3athothman/AmbientDesk-scenes/main/packs/petal-bloom/preview.svg",
+      "sha256": "56d605f138745395ba05a1a6c49362e97ca71141edad630a5af41dd13c55e2e9",
+      "size": 3976,
+      "tags": [
+        "light",
+        "minimal",
+        "geometric"
       ]
     }
   ]
